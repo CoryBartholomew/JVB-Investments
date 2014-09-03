@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width" />
+        <title>@ViewBag.Title</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body data-ng-app="cbApp">
+        <div id="page-container" data-role="page" data-theme="d" class="ui-page">
+            <header cb-header></header>
+            <div data-role="content">
+                @RenderBody()
+            </div>
+        </div>
+
+        <div class="alert-container" data-ng-cloak>
+            <rt-alert data-ng-repeat="alert in alerts" type="alert.type" close="alert.close()" data-ng-click="alert.close()">{{alert.msg}}</rt-alert>
+        </div>
+
+        <img class="loader" alt="loading" src="../Content/images/ajax-loader.gif" data-ng-show="showLoader" />
+        
+        @Scripts.Render("~/bundles/rt-scripts")
+        @Scripts.Render("~/bundles/angular")
+        @Scripts.Render("~/bundles/rtAppProviders")
+        @Scripts.Render("~/bundles/rtApp")
+    </body>
+</html>

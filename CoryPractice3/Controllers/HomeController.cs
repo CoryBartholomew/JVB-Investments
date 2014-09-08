@@ -10,7 +10,7 @@ namespace CoryPractice3.Controllers
     {
         public ActionResult Index()
         {
-            return Redirect("~/Home/clogin");
+            return View();
         }
 
         public ActionResult About()

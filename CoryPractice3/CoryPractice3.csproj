@@ -158,10 +158,12 @@
   <ItemGroup>
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\cbTemplateViewEngine.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\AngularAppController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -172,9 +174,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="angular-app\cbApp.js" />
     <Content Include="angular-app\Directives\cbHeader.js" />
-    <Content Include="angular-app\pagedetails\homepageCtrl.js" />
     <Content Include="angular-app\pagedetails\homepage.html" />
+    <Content Include="angular-app\pagedetails\homepageCtrl.js" />
     <Content Include="angular-app\Services\cbRouteProvider.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -232,8 +235,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="angular-app\index.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="angular-app\cbApp.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -257,6 +260,7 @@
     <Content Include="Scripts\vendor\angular-1.2.16\angular-touch.min.js" />
     <Content Include="Scripts\vendor\angular-1.2.16\angular.js" />
     <Content Include="Scripts\vendor\angular-1.2.16\angular.min.js" />
+    <None Include="Views\Admin\Main.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -302,6 +306,7 @@
     <Content Include="Scripts\vendor\angular-1.2.16\angular-touch.min.js.map" />
     <Content Include="Scripts\vendor\angular-1.2.16\angular.min.js.map" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\AngularApp\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

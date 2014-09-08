@@ -13,22 +13,22 @@ namespace CoryPractice3
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "AngularAppTemplates",
-                url: "angular-app/{*template}",
-                defaults: new { controller = "AngularApp", action = "GetTemplate" }
-            );
+            //routes.MapRoute(
+            //    name: "AngularAppTemplates",
+            //    url: "angular-app/{*template}",
+            //    defaults: new { controller = "AngularApp", action = "GetTemplate" }
+            //);
 
-            routes.MapRoute(
-                name: "AngularAppRoot",
-                url: "CallDetails",
-                defaults: new { controller = "AngularApp", action = "AppRoot" }
-            );
+            //routes.MapRoute(
+            //    name: "AngularAppRoot",
+            //    url: "CallDetails",
+            //    defaults: new { controller = "AngularApp", action = "AppRoot" }
+            //);
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "AngularApp", action = "AppRoot", id = UrlParameter.Optional }
             );
         }
     }

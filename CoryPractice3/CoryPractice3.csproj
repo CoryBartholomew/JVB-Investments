@@ -175,10 +175,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="angular-app\cbApp.js" />
+    <Content Include="angular-app\Controllers\propertyController.js" />
     <Content Include="angular-app\Directives\cbHeader.js" />
+    <Content Include="angular-app\Directives\cbHeader.html" />
+    <Content Include="angular-app\House\houseController.js" />
+    <None Include="Views\AngularApp\property.cshtml" />
     <Content Include="angular-app\pagedetails\homepage.html" />
     <Content Include="angular-app\pagedetails\homepageCtrl.js" />
     <Content Include="angular-app\Services\cbRouteProvider.js" />
+    <Content Include="angular-app\Services\dataService.js" />
+    <Content Include="Content\angular-multi-select.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\ng-grid.min.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -235,7 +244,6 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="angular-app\index.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />

@@ -1,0 +1,25 @@
+﻿<div id="tabsLayout" data-ng-controller="propertyCtrl">
+    <section style="float: inherit; position: relative;">
+        <tabset>
+            <tab heading="Pictures">
+                <span id="pictureLayout">
+                 <carousel interval="myInterval">
+                  <slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}" style="margin:auto; height: 100%;">
+                    <div class="carousel-caption">
+                    </div>
+                  </slide>
+                </carousel>   
+                </span>             
+            </tab>
+            <tab heading="another tab">
+                more house stuff
+            </tab>
+        </tabset>
+    <div style="float:left;">
+
+
+    </div>
+
+    </section>
+</div>

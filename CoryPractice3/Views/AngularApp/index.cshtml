@@ -1,26 +1,91 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "a Awesome page";
 }
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,width=device-width" />
-        <title>awesome title</title>
-    @*<link href="../favicon.ico" rel="shortcut icon" type="image/x-icon" />*@
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
-    </head>
-<body data-ng-app="cbApp" >
-        <div id="page-container" data-role="page" data-theme="d" class="ui-page">
-            <div data-role="content">
-                <ng-view></ng-view>
+@section headSection
+{
+
+    <script src="~/angular-app/House/houseController.js"></script>
+    <script src="~/angular-app/Controllers/propertyController.js"></script>
+@*    <script src="~/Scripts/HelpDesk/helpdesk-controller.js"></script>
+    <script src="~/Scripts/Tickets/tickets-controller.js"></script>
+    <script src="~/Scripts/Tickets/customer-controller.js"></script>
+    <script src="~/Scripts/Tickets/call-controller.js"></script>
+    <script src="~/Scripts/Tickets/equipment-controller.js"></script>
+    <script src="~/Scripts/Tickets/labor-controller.js"></script>
+    <script src="~/Scripts/Tickets/notes-controller.js"></script>
+    <script src="~/Scripts/Tickets/codes-controller.js"></script>
+    <script src="~/Scripts/Tickets/attachments-controller.js"></script>
+    <script src="~/Scripts/Tickets/ticket-details.js"></script>
+    <script src="~/Scripts/Tickets/ticket-services.js"></script>
+    <script src="~/Scripts/HelpDesk/helpdesk-services.js"></script>*@
+}
+<div id="houseContainer" class="container" data-ng-controller="houseCtrl">
+    <section id="CustomerInfo">
+        <div class="float-left">
+            <div>
+                <label>Property Name</label>
+                <label>{{property.name}}</label>
+            </div>
+            <div>
+                <label>Address</label>
+                <label>{{property.address}}</label>
+            </div>
+            <div>
+                <label>City</label>
+                <label>{{property.city}}</label>
+            </div>
+            <div>
+                <label>State</label>
+                <label>{{property.state}}</label>
+            </div>
+            <div>
+                <label>Zip</label>
+                <label>{{property.zip}}</label>
             </div>
         </div>
+        <div id="middleSection" style="margin-left: 300px; border-left:solid black;" class="float-left">
+            <div style="margin-left:8px;">
+                <div>
+                    <label>Bedrooms:</label>
+                    <label>{{property.name}}</label>
+                </div>
+                <div>
+                    <label>Baths:</label>
+                    <label>{{property.address}}</label>
+                </div>
+                <div>
+                    <label>SQ FT</label>
+                    <label>{{property.city}}</label>
+                </div>
+                <div>
+                    <label>Acres</label>
+                    <label>{{property.state}}</label>
+                </div>
+            </div>
+        </div>
+        <div id="middleSection" style="margin-left: 300px; border-left:solid black;" class="float-left">
+            <div style="margin-left:8px;">
+                <div>
+                    <label>Sale Price:</label>
+                    <label>{{property.name}}</label>
+                </div>
+                <div>
+                    <label>Current Debt:</label>
+                    <label>{{property.address}}</label>
+                </div>
+                <div>
+                    <label>Purchase Date:</label>
+                    <label>{{property.city}}</label>
+                </div>
+                <div>
+                    <label>Property Manager:</label>
+                    <label>{{property.state}}</label>
+                </div>
+            </div>
+        </div>
+    </section>
 
-@*        <img class="loader" alt="loading" src="../Content/images/ajax-loader.gif" data-ng-show="showLoader" />*@
-        
-        @Scripts.Render("~/bundles/angular")
-        @Scripts.Render("~/bundles/rtApp")
-    </body>
-</html>
+    <section>
+        @Html.Partial("property")
+    </section>
+</div>

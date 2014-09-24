@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 angular.module('cbApp')
-.directive('cbHeader', ['cbRouter', function rtHeaderDirective(cbRouter) {
+.directive('cbHeader', ['$window', function rtHeaderDirective($window) {
     return {
         restrict: 'EA',
         templateUrl: '../angular-app/directives/cbHeader.html',
@@ -10,6 +10,9 @@ angular.module('cbApp')
             $scope.goToCallsList = function () {
                 cbRouter.navigateToView('homepage', {});
             }
+            $scope.loadView = function (viewName) {
+                $window.location.href = routePath;
+            };
         }]
     };
 }]);

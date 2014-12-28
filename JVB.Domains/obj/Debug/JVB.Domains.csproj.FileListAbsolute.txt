@@ -1,0 +1,5 @@
+C:\practice projects\CoryPractice3\JVB.Domains\bin\Debug\JVB.Domains.dll
+C:\practice projects\CoryPractice3\JVB.Domains\bin\Debug\JVB.Domains.pdb
+C:\practice projects\CoryPractice3\JVB.Domains\obj\Debug\JVB.Domains.csprojResolveAssemblyReference.cache
+C:\practice projects\CoryPractice3\JVB.Domains\obj\Debug\JVB.Domains.dll
+C:\practice projects\CoryPractice3\JVB.Domains\obj\Debug\JVB.Domains.pdb

@@ -92,12 +92,15 @@ middleSection
     margin-left: 10px;
 }
 
+
+
 section
 {
     border: 1px solid #100101;
     border-bottom: 1px dotted #100101;
     padding: 10px;
     padding-top: 30px;
+    padding-bottom: 100px;
     overflow:auto;
 }
 .float-left
@@ -116,4 +119,159 @@ section
 {
     height: 650px;
     position: relative;
+}
+
+#searchFilterDiv 
+{
+    margin-left: 650px;
+    height: 1000px;
+    width: 400px;
+    float: left;
+}
+/*general*/
+.alignBottom
+{
+    vertical-align: bottom;
+}
+
+.alignCenter
+{
+    text-align: center;
+}
+
+.alignLeft
+{
+    text-align: left;
+}
+
+.alignMiddle
+{
+    vertical-align: middle;
+}
+
+.alignRight
+{
+    text-align: right;
+}
+
+.alignTop
+{
+    vertical-align: top;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+.darkText{
+    color:#111;
+}
+.clear
+{
+    clear: both;
+}
+
+.hide
+{
+    display: none;
+}
+
+.inlineBlock
+{
+    display: inline-block;
+}
+
+.noWrap
+{
+    white-space: nowrap;
+}
+
+.posRelative
+{
+    position: relative;
+}
+
+.topSpacer-0{
+    margin-top:0;
+}
+
+.topSpacer-3{
+    margin-top:3px;
+}
+
+.topSpacer-4{
+    margin-top:4px;
+}
+
+.topSpacer-10{
+    margin-top:10px;
+}
+
+.topSpacer-20{
+    margin-top:20px;
+}
+
+.expired{
+    background-color:mistyrose;
+}
+
+.displayinlineblock
+{
+    display: inline-block;
+}
+
+.vertical-align-top{
+    vertical-align:top;
+}
+
+
+.dateHolder {
+    display:inline-block;
+    position:relative;
+}
+.dateHolder span{
+    padding-right:24px;
+}
+.dateHolder label.lbl{
+    vertical-align:top;
+}
+
+/*end generals*/
+.ctrlRow
+{
+    margin-bottom: 4px;
+}
+
+.col50Pct
+{
+    display: inline-block;
+    height: inherit;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    vertical-align: top;
+    width: 430px;
+}
+.c2 {
+    width: 50%;
+}
+.dataContentHolder
+{
+    padding: 4px 10px 4px 10px;
+    vertical-align: top;
+}
+
+#startTime input[type=text],
+#endTime input[type=text] {
+    width: 50px;
+}
+
+#propertyInfoHolder label.lbl
+{
+    float: left;
+    /*margin-top: 4px;*/
+    width: 110px;
+}
+
+.startTimeHolder {
+
 }

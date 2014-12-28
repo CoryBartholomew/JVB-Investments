@@ -1,4 +1,8 @@
-﻿<div id="tabsLayout" data-ng-controller="propertyCtrl">
+﻿<script src="~/angular-app/House/houseController.js"></script>
+<script src="~/angular-app/Controllers/propertyController.js"></script>
+<script src="~/angular-app/Controllers/homepageCtrl.js"></script>
+
+<div id="tabsLayout" data-ng-controller="propertyCtrl">
     <section style="float: inherit; position: relative;">
         <tabset>
             <tab heading="Pictures">
@@ -13,12 +17,151 @@
                 </span>             
             </tab>
             <tab heading="another tab">
-                more house stuff
-            </tab>
+                <div id="propertyInfoHolder" style="width: 80%">
+                <div>
+                    <h3>Add Work Detail </h3>
+                </div>
+
+                <div class="dataContentHolder" style="position: relative;"> 
+                <div class="col50Pct c1">
+                    <div class="ctrlRow">
+                    <label class="lbl">Activity:</label>
+                    <select
+                        id="selCaller"                 
+                        name="dtCaller"
+                        style="min-width: 150px;"
+                        ng-model="workDetail.activity"
+                        ng-options="activity.description for activity in activities"
+                        required></select>
+                    </div>
+                
+                    <div class="ctrlRow">
+                        <label class="lbl">Tech:</label>
+                        <select
+                            id="selCaller"                 
+                            name="dtCaller"
+                            style="min-width: 150px;"
+                            ng-model="workDetail.tech"
+                            ng-options="tech.firstName + ' ' + tech.lastName for tech in techs"
+                            required
+                        ></select>
+
+                        <ul>
+                            <li data-ng-repeat="dataItem in workDetail.workersOnWorkDetail">
+                                <span>{{dataItem.firstName}}</span>: 
+                                <span>{{dataItem.lastName}}</span>
+                                <label data-ng-click="removeWorkder()">remove</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ctrlRow">
+                        <label class="lbl">Item:</label>
+                        <input data-ng-show="!ticketData.editMode && !displayMode" id="scustomer" type="text" data-ng-model="workDetailItem.name"
+                            typeahead-min-length="3"
+                            typeahead-wait-ms="500"
+                            typeahead-on-select="selectItem($item)"
+                            typeahead="item.name for item in getItems($viewValue)" />
+                    </div>
+                    <div class="ctrlRow">
+                        <label class="lbl">Quantity:</label>
+                        <input type="text" name="contactcity" data-ng-model="workDetailItem.quantity" />
+                    </div>
+                    <div class="ctrlRow">
+                        <label class="lbl">Price per Unit:</label>
+                        <input type="text" name="contactcity" data-ng-model="workDetailItem.pricePerUnit" />
+                    </div>
+                    <div style="float:right; margin-right: 10px;">
+                        <button data-ng-click="addItem()">Add Expense</button>
+                    </div>
+                    <div style="max-height:">
+                        <ul>
+                            <li data-ng-repeat="dataItem in workDetail.workItems">
+                                <span>{{dataItem.name}}- </span>: 
+                                                <span>{{dataItem.quantity}}: </span>
+                                <span>{{dataItem.pricePerUnit}}</span>
+                                <label data-ng-click="removeWorkder()">remove</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ctrlRow">
+                        <label class="lbl">Notes</label>
+                        <textarea style="width:100%;" data-ng-hide="displayMode" id="laborNotes" ng-model="workDetail.notes">{{workDetail.notes}}</textarea>
+                    </div>
+
+                </div>
+                <div class="col50Pct c2">
+                    <div class="ctrlRow" ng-controller="startDateTimeController">
+
+                        <label style="float:left;" class="topSpacer-3">Start Time:</label>
+                            <table class="startTimeHolder" data-ng-hide="displayMode" style="font-size:.9em;">
+                                    <tr>
+                                        <td>
+                                            <input type="text" 
+                                                name="starttimelabor"
+                                                class="laborDateInput"
+                                                datepicker-popup="{{format}}"
+                                                ng-model="dates.workDetailRecordStartDate"
+                                                is-open="opened"
+                                                datepicker-options="dateOptions"
+                                                close-text="Close"
+                                                show-weeks="false" />
+                                            <span>
+                                                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </span>
+                                        </td>
+                                        <td>
+                                          <div id="startTime" class="display-inline-block">
+                                                <timepicker class="tPickerStart" ng-model="dates.workDetailStartTime" show-meridian="isStartTimeMeridian"></timepicker>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                    <div class="ctrlRow" ng-controller="endDateTimeController">
+                        <label style="float:left;" class="topSpacer-3">End Time:</label>
+                            <table class="displayinlineblock" data-ng-hide="displayMode" style="font-size:.9em;">
+                                    <tr>
+                                        <td>
+                                            <input type="text" 
+                                                name="endtimelabor"
+                                                class="laborDateInput"
+                                                datepicker-popup="{{format}}"
+                                                ng-model="dates.workDetailRecordEndDate"
+                                                is-open="opened"
+                                                datepicker-options="dateOptions"
+                                                close-text="Close"
+                                                show-weeks="false" />
+                                            <span>
+                                                <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                            </span>
+                                        </td>
+                                        <td>
+                                          <div id="startTime" class="display-inline-block">
+                                                <timepicker class="tPickerStart" ng-model="dates.workDetailEndTime" show-meridian="isStartTimeMeridian"></timepicker>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+@*<div>
+    <button data-ng-click="addWorkDetail()">Add Work Detail</button>
+</div>*@
+</div>
+</tab>
         </tabset>
-    <div style="float:left;">
-
-
     </div>
 
     </section>

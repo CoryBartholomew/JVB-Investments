@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CoryPractice3.Controllers
+namespace JVB.WebUI.Controllers
 {
     public class AngularAppController : Controller
     {
@@ -30,7 +30,7 @@ namespace CoryPractice3.Controllers
 
         public ActionResult AppRoot()
         {
-            return View("index");
+            return View("property");
         }
 
         //public PartialViewResult GetTemplate(string template)

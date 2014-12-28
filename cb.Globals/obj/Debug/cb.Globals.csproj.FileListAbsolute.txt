@@ -3,3 +3,8 @@ C:\home projects\CoryPractice3\cb.Globals\bin\Debug\cb.Globals.pdb
 C:\home projects\CoryPractice3\cb.Globals\obj\Debug\cb.Globals.csprojResolveAssemblyReference.cache
 C:\home projects\CoryPractice3\cb.Globals\obj\Debug\cb.Globals.dll
 C:\home projects\CoryPractice3\cb.Globals\obj\Debug\cb.Globals.pdb
+C:\practice projects\CoryPractice3\cb.Globals\bin\Debug\cb.Globals.dll
+C:\practice projects\CoryPractice3\cb.Globals\bin\Debug\cb.Globals.pdb
+C:\practice projects\CoryPractice3\cb.Globals\obj\Debug\cb.Globals.csprojResolveAssemblyReference.cache
+C:\practice projects\CoryPractice3\cb.Globals\obj\Debug\cb.Globals.dll
+C:\practice projects\CoryPractice3\cb.Globals\obj\Debug\cb.Globals.pdb

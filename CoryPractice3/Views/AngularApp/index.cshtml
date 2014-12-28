@@ -6,6 +6,7 @@
 
     <script src="~/angular-app/House/houseController.js"></script>
     <script src="~/angular-app/Controllers/propertyController.js"></script>
+    <script src="~/angular-app/Controllers/homepageCtrl.js"></script>
 @*    <script src="~/Scripts/HelpDesk/helpdesk-controller.js"></script>
     <script src="~/Scripts/Tickets/tickets-controller.js"></script>
     <script src="~/Scripts/Tickets/customer-controller.js"></script>
@@ -19,73 +20,28 @@
     <script src="~/Scripts/Tickets/ticket-services.js"></script>
     <script src="~/Scripts/HelpDesk/helpdesk-services.js"></script>*@
 }
-<div id="houseContainer" class="container" data-ng-controller="houseCtrl">
-    <section id="CustomerInfo">
-        <div class="float-left">
-            <div>
-                <label>Property Name</label>
-                <label>{{property.name}}</label>
-            </div>
-            <div>
-                <label>Address</label>
-                <label>{{property.address}}</label>
-            </div>
-            <div>
-                <label>City</label>
-                <label>{{property.city}}</label>
-            </div>
-            <div>
-                <label>State</label>
-                <label>{{property.state}}</label>
-            </div>
-            <div>
-                <label>Zip</label>
-                <label>{{property.zip}}</label>
-            </div>
-        </div>
-        <div id="middleSection" style="margin-left: 300px; border-left:solid black;" class="float-left">
-            <div style="margin-left:8px;">
-                <div>
-                    <label>Bedrooms:</label>
-                    <label>{{property.name}}</label>
-                </div>
-                <div>
-                    <label>Baths:</label>
-                    <label>{{property.address}}</label>
-                </div>
-                <div>
-                    <label>SQ FT</label>
-                    <label>{{property.city}}</label>
-                </div>
-                <div>
-                    <label>Acres</label>
-                    <label>{{property.state}}</label>
-                </div>
-            </div>
-        </div>
-        <div id="middleSection" style="margin-left: 300px; border-left:solid black;" class="float-left">
-            <div style="margin-left:8px;">
-                <div>
-                    <label>Sale Price:</label>
-                    <label>{{property.name}}</label>
-                </div>
-                <div>
-                    <label>Current Debt:</label>
-                    <label>{{property.address}}</label>
-                </div>
-                <div>
-                    <label>Purchase Date:</label>
-                    <label>{{property.city}}</label>
-                </div>
-                <div>
-                    <label>Property Manager:</label>
-                    <label>{{property.state}}</label>
-                </div>
-            </div>
-        </div>
-    </section>
+<div data-ng-controller="homePageCtrl">
+    <div id="searchFilterDiv">
+            <label>
 
-    <section>
-        @Html.Partial("property")
-    </section>
+            </label>
+            <div>
+                <label>City:</label>
+                <input type ="text" />
+            </div>
+            <div>
+                <label>State:</label>
+                <input type ="text" />
+            </div>
+            <div>
+                <label>Zip:</label>
+                <input type ="text" />
+            </div>
+    </div>
+
+    <div>
+
+    </div>
+
 </div>
+

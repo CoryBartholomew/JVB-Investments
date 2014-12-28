@@ -60,10 +60,7 @@ C:\practice projects\CoryPractice3\CoryPractice3\bin\EntityFramework.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\Microsoft.Web.Infrastructure.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\Microsoft.Web.WebPages.OAuth.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\Newtonsoft.Json.dll
-C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Net.Http.Formatting.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Helpers.dll
-C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Http.dll
-C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Http.WebHost.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Mvc.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Optimization.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Razor.dll
@@ -75,10 +72,7 @@ C:\practice projects\CoryPractice3\CoryPractice3\bin\WebMatrix.Data.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\WebMatrix.WebData.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\EntityFramework.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\Newtonsoft.Json.xml
-C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Net.Http.Formatting.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Helpers.xml
-C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Http.xml
-C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Http.WebHost.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Mvc.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Razor.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.WebPages.xml

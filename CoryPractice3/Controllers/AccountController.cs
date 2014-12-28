@@ -11,7 +11,7 @@ using WebMatrix.WebData;
 using CoryPractice3.Filters;
 using CoryPractice3.Models;
 
-namespace CoryPractice3.Controllers
+namespace JVB.WebUI.Controllers
 {
     [Authorize]
     [InitializeSimpleMembership]

@@ -1,0 +1,13 @@
+C:\practice projects\CoryPractice3\JVB.Repositories\obj\Debug\JVB.Repositories.csprojResolveAssemblyReference.cache
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Repositories.dll
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Repositories.pdb
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\cb.Globals.dll
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Domains.dll
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Interface.Repositories.dll
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Interface.Services.dll
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\cb.Globals.pdb
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Domains.pdb
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Interface.Repositories.pdb
+C:\practice projects\CoryPractice3\JVB.Repositories\bin\Debug\JVB.Interface.Services.pdb
+C:\practice projects\CoryPractice3\JVB.Repositories\obj\Debug\JVB.Repositories.dll
+C:\practice projects\CoryPractice3\JVB.Repositories\obj\Debug\JVB.Repositories.pdb

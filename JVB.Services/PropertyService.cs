@@ -17,9 +17,9 @@ namespace JVB.Services
             propertyRepository = repository;
 		}
 
-        public IEnumerable<Property> GetContributors()
+        public IEnumerable<Property> GetProperties(int customerID)
         {
-            return propertyRepository.GetContributors();
+            return propertyRepository.GetProperties(customerID);
         }
     }
 }

@@ -1,2 +1,10 @@
-﻿welcome to admin page
-<div class="container" ng-controller="adminController">     </div>
+﻿<script src="~/angular-app/House/houseController.js"></script>
+<script src="~/angular-app/Controllers/propertyController.js"></script>
+<script src="~/angular-app/Controllers/homepageCtrl.js"></script>
+<script src="~/angular-app/Services/dataService.js"></script>
+<div id="tabsLayout" data-ng-controller="homePageCtrl">
+    <ul>
+        <li data-ng-repeat="house in properties"></li>
+    </ul>
+
+</div>

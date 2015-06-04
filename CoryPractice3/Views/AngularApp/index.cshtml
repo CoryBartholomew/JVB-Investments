@@ -7,6 +7,7 @@
     <script src="~/angular-app/House/houseController.js"></script>
     <script src="~/angular-app/Controllers/propertyController.js"></script>
     <script src="~/angular-app/Controllers/homepageCtrl.js"></script>
+    <script src="~/angular-app/Services/dataService.js"></script>
 @*    <script src="~/Scripts/HelpDesk/helpdesk-controller.js"></script>
     <script src="~/Scripts/Tickets/tickets-controller.js"></script>
     <script src="~/Scripts/Tickets/customer-controller.js"></script>
@@ -20,28 +21,24 @@
     <script src="~/Scripts/Tickets/ticket-services.js"></script>
     <script src="~/Scripts/HelpDesk/helpdesk-services.js"></script>*@
 }
-<div data-ng-controller="homePageCtrl">
-    <div id="searchFilterDiv">
-            <label>
+<div id="tabsLayout" data-ng-controller="homePageCtrl">
+    <table id="property-table" class="pListControl alternaterowcolors">
+        <tr class="HeaderRow">
+            <th class="pLabel" style="width: 84px;">Name</th>
+            <th class="pLabel" style="width: 80px;">Address</th>
+            <th class="pLabel" style="width: 80px;">City</th>
+            <th class="pLabel" style="width: 50px;">State</th>
+            <th class="pLabel" style="width: 50px;">Zip</th>
 
-            </label>
-            <div>
-                <label>City:</label>
-                <input type ="text" />
-            </div>
-            <div>
-                <label>State:</label>
-                <input type ="text" />
-            </div>
-            <div>
-                <label>Zip:</label>
-                <input type ="text" />
-            </div>
-    </div>
-
-    <div>
-
-    </div>
+        </tr>
+        <tr data-ng-repeat="property in properties track by $index">
+            <td class="pText"> <a data-ng-click="navigateToProperty(property)">{{property.Name}}</a></td>
+            <td class="pText">{{property.Address}}</td>
+            <td class="pText" ">{{property.City}}</td>
+            <td class="pText">{{property.State}}</td>
+            <td class="pText">{{property.Zip}}</td>
+        </tr>
+    </table>
 
 </div>
 

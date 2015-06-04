@@ -12,6 +12,10 @@ namespace JVB.WebUI.Controllers
     {
         private IPropertyService propertyService;
 
+        public PropertyController(IPropertyService pService)
+        {
+            propertyService = pService;
+        }
         public ActionResult Index()
         {
             return View();
@@ -21,7 +25,7 @@ namespace JVB.WebUI.Controllers
 
         public ActionResult PropertyList()
         {
-            IEnumerable<Property> properties = propertyService.GetContributors();
+            IEnumerable<Property> properties = propertyService.GetProperties(1);
 
             return Json(properties, JsonRequestBehavior.AllowGet);
         }

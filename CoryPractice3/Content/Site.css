@@ -275,3 +275,29 @@ section
 .startTimeHolder {
 
 }
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 300px
+}
+
+.gridTemplateForTitle
+{
+	overflow: hidden;
+	padding:5px 0 0 5px; 
+	-ms-text-overflow: ellipsis; 
+	-o-text-overflow: ellipsis; 
+	text-overflow: ellipsis; 
+	white-space: nowrap; 
+}
+
+.alternaterowcolors tr:nth-of-type(2n+1) {
+    background-color: #EAEAEF;
+}
+
+#property-table a {
+    cursor: pointer;
+    color: #0000FF;
+    text-decoration: underline;
+}

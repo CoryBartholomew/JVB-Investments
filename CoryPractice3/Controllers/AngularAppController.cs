@@ -25,7 +25,7 @@ namespace JVB.WebUI.Controllers
 
         public ActionResult Index()
         {
-            return RedirectToAction("Main", "Admin");
+            return View();
         }
 
         public ActionResult AppRoot()

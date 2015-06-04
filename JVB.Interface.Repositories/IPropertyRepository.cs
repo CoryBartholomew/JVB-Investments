@@ -9,6 +9,6 @@ namespace JVB.Interface.Repositories
 {
     public interface IPropertyRepository
     {
-        IEnumerable<Property> GetContributors();
+        IEnumerable<Property> GetProperties(int customerID);
     }
 }

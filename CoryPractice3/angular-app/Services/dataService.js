@@ -12,5 +12,6 @@ angular.module('cbApp')
             }).success(deferred.resolve).error(deferred.reject);
             return deferred.promise;
         };
+        return dataService;
         //dataService.getProperty = function ()
     }]);

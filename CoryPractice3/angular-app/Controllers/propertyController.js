@@ -1,51 +1,51 @@
-﻿var Labor = {};
+﻿//var Labor = {};
 
-Labor.init = function () {
-    $('.propertyInfoHolder .tPickerStart td button, .tPickerEnd td button').addClass('btn-xs');
-    $('.propertyInfoHolder .tPickerStart tr:first').hide();
-    $('.propertyInfoHolder .tPickerStart tr:last').hide();
-    $('.propertyInfoHolder .tPickerEnd tr:first').hide();
-    $('.propertyInfoHolder .tPickerEnd tr:last').hide();
-    $('.propertyInfoHolder .tPickerEnd input').val('');
+//Labor.init = function () {
+//    $('.propertyInfoHolder .tPickerStart td button, .tPickerEnd td button').addClass('btn-xs');
+//    $('.propertyInfoHolder .tPickerStart tr:first').hide();
+//    $('.propertyInfoHolder .tPickerStart tr:last').hide();
+//    $('.propertyInfoHolder .tPickerEnd tr:first').hide();
+//    $('.propertyInfoHolder .tPickerEnd tr:last').hide();
+//    $('.propertyInfoHolder .tPickerEnd input').val('');
 
-    $('.laborEndHolder .tPickerStart td button, .tPickerEnd td button').addClass('btn-xs');
-    $('.laborEndHolder .tPickerStart tr:first').hide();
-    $('.laborEndHolder .tPickerStart tr:last').hide();
-    $('.laborEndHolder .tPickerEnd tr:first').hide();
-    $('.laborEndHolder .tPickerEnd tr:last').hide();
-    $('.laborEndHolder .tPickerEnd input').val('');
-};
+//    $('.laborEndHolder .tPickerStart td button, .tPickerEnd td button').addClass('btn-xs');
+//    $('.laborEndHolder .tPickerStart tr:first').hide();
+//    $('.laborEndHolder .tPickerStart tr:last').hide();
+//    $('.laborEndHolder .tPickerEnd tr:first').hide();
+//    $('.laborEndHolder .tPickerEnd tr:last').hide();
+//    $('.laborEndHolder .tPickerEnd input').val('');
+//};
 
-Labor.getCompositeDate = function (d, t) {
-    return new Date(d.getFullYear(), d.getMonth(), d.getDate(), t.getHours(), t.getMinutes(), t.getSeconds(), t.getMilliseconds());
-};
+//Labor.getCompositeDate = function (d, t) {
+//    return new Date(d.getFullYear(), d.getMonth(), d.getDate(), t.getHours(), t.getMinutes(), t.getSeconds(), t.getMilliseconds());
+//};
 
-Labor.getDuration = function (s, e) {
-    var diff = e - s;
+//Labor.getDuration = function (s, e) {
+//    var diff = e - s;
 
-    var days = parseInt(diff / (24 * 3600 * 1000));
-    diff = diff - (days * 24 * 3600 * 1000);
+//    var days = parseInt(diff / (24 * 3600 * 1000));
+//    diff = diff - (days * 24 * 3600 * 1000);
 
-    var hours = parseInt(diff / (3600 * 1000));
-    diff = diff - (hours * 3600 * 1000);
+//    var hours = parseInt(diff / (3600 * 1000));
+//    diff = diff - (hours * 3600 * 1000);
 
-    var minutes = parseInt(diff / 60 / 1000);
+//    var minutes = parseInt(diff / 60 / 1000);
 
-    if (days > 0) {
-        return days + 'd ' + hours + 'h ' + minutes + 'm';
-    }
+//    if (days > 0) {
+//        return days + 'd ' + hours + 'h ' + minutes + 'm';
+//    }
 
-    if (hours > 0) {
-        return hours + 'h ' + minutes + 'm';
-    }
+//    if (hours > 0) {
+//        return hours + 'h ' + minutes + 'm';
+//    }
 
-    return minutes + 'm';
-};
+//    return minutes + 'm';
+//};
 
-// The jQuery document ready function.
-$(document).ready(function () {
-    Labor.init();
-});
+//// The jQuery document ready function.
+//$(document).ready(function () {
+//    Labor.init();
+//});
 
 angular.module('cbApp')
     .controller('propertyCtrl', ['$scope', '$filter', function ($scope, $filter) {

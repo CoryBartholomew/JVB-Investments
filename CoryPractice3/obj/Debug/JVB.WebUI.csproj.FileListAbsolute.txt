@@ -9,7 +9,6 @@ C:\practice projects\CoryPractice3\CoryPractice3\bin\DotNetOpenAuth.OAuth.Consum
 C:\practice projects\CoryPractice3\CoryPractice3\bin\DotNetOpenAuth.OAuth.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\DotNetOpenAuth.OpenId.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
-C:\practice projects\CoryPractice3\CoryPractice3\bin\EntityFramework.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Domains.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Interface.Repositories.dll
 C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Interface.Services.dll
@@ -34,7 +33,6 @@ C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Interface.Repositories.
 C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Interface.Services.pdb
 C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Repositories.pdb
 C:\practice projects\CoryPractice3\CoryPractice3\bin\JVB.Services.pdb
-C:\practice projects\CoryPractice3\CoryPractice3\bin\EntityFramework.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\Newtonsoft.Json.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Helpers.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\System.Web.Mvc.xml
@@ -53,3 +51,10 @@ C:\practice projects\CoryPractice3\CoryPractice3\bin\DotNetOpenAuth.OpenId.xml
 C:\practice projects\CoryPractice3\CoryPractice3\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 C:\practice projects\CoryPractice3\CoryPractice3\obj\Debug\CoryPractice3.dll
 C:\practice projects\CoryPractice3\CoryPractice3\obj\Debug\CoryPractice3.pdb
+C:\practice projects\CoryPractice3\CoryPractice3\bin\WebActivatorEx.dll
+C:\practice projects\CoryPractice3\CoryPractice3\bin\Ninject.dll
+C:\practice projects\CoryPractice3\CoryPractice3\bin\Ninject.Web.Common.dll
+C:\practice projects\CoryPractice3\CoryPractice3\bin\Ninject.Web.Mvc.dll
+C:\practice projects\CoryPractice3\CoryPractice3\bin\Ninject.xml
+C:\practice projects\CoryPractice3\CoryPractice3\bin\Ninject.Web.Common.xml
+C:\practice projects\CoryPractice3\CoryPractice3\bin\Ninject.Web.Mvc.xml

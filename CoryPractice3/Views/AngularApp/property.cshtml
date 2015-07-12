@@ -2,7 +2,19 @@
 <script src="~/angular-app/Controllers/propertyController.js"></script>
 <script src="~/angular-app/Controllers/homepageCtrl.js"></script>
 
-<div id="tabsLayout" data-ng-controller="propertyCtrl">
+<div class="" id="tabsLayout" data-ng-controller="propertyCtrl">
+<div style="height:100px; width:100%; border:solid" >
+    <label>Header</label>
+</div>
+<div style="width:50%; height:100%; border:solid;">
+    <label>Body</label>
+    <button type="button" data-ng-click="goToLoanInfo()">You are an image of something for the loan info</button>
+
+</div>
+
+</div>
+
+@*<div id="tabsLayout" data-ng-controller="propertyCtrl">
     <section style="float: inherit; position: relative;">
         <tabset>
             <tab heading="Pictures">
@@ -156,9 +168,9 @@
 
 
 
-@*<div>
+<div>
     <button data-ng-click="addWorkDetail()">Add Work Detail</button>
-</div>*@
+</div>
 </div>
 </tab>
         </tabset>
@@ -166,3 +178,4 @@
 
     </section>
 </div>
+*@

@@ -33,6 +33,11 @@ namespace JVB.WebUI.Controllers
             return View("property");
         }
 
+        public ActionResult LoanInfo()
+        {
+            return View("LoanInfo");
+        }
+
         //public PartialViewResult GetTemplate(string template)
         //{
         //    var templateName = template.Replace(".html", "");

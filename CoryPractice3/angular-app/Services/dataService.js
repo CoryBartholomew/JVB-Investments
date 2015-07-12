@@ -12,6 +12,17 @@ angular.module('cbApp')
             }).success(deferred.resolve).error(deferred.reject);
             return deferred.promise;
         };
+
+        dataService.getProperty = function (id) {
+            var deferred = $q.defer();
+            $http.get('/Property/SingleProperty', {
+                params: {
+                    id: id
+                }
+            }).success(deferred.resolve).error(deferred.reject);
+            return deferred.promise;
+        };
+        
         return dataService;
         //dataService.getProperty = function ()
     }]);

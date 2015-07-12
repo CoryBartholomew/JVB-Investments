@@ -8,6 +8,7 @@ namespace JVB.Domains
 {
     public class Property
     {
+        public virtual int ID { get; set; }
         public virtual string Address { get; set;}
         public virtual string City { get; set; }
         public virtual string State { get; set; }

@@ -190,6 +190,8 @@
     <Content Include="angular-app\Directives\cbHeader.js" />
     <Content Include="angular-app\Directives\cbHeader.html" />
     <Content Include="angular-app\House\houseController.js" />
+    <Content Include="angular-app\House\LoanInfoController.js" />
+    <Content Include="Views\AngularApp\LoanInfo.cshtml" />
     <None Include="Views\AngularApp\property.cshtml" />
     <Content Include="angular-app\Templates\CellTemplateWrapTitle.html" />
     <Content Include="angular-app\Templates\homepage.html" />
@@ -328,6 +330,7 @@
     <Content Include="Scripts\vendor\angular-1.2.16\angular.min.js.map" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\AngularApp\index.cshtml" />
+    <Content Include="Views\Property\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="angular-app\pagedetails\" />

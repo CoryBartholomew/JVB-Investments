@@ -32,7 +32,7 @@
 
         </tr>
         <tr data-ng-repeat="property in properties track by $index">
-            <td class="pText"> <a data-ng-click="navigateToProperty(property)">{{property.Name}}</a></td>
+            <td class="pText"> <a data-ng-click="navigateToProperty(property.ID)">{{property.Name}}</a></td>
             <td class="pText">{{property.Address}}</td>
             <td class="pText" ">{{property.City}}</td>
             <td class="pText">{{property.State}}</td>

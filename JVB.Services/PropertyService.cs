@@ -21,5 +21,10 @@ namespace JVB.Services
         {
             return propertyRepository.GetProperties(customerID);
         }
+
+        public Property GetProperty(int propertyID)
+        {
+            return propertyRepository.GetProperty(propertyID);
+        }
     }
 }

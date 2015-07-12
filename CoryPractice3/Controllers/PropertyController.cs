@@ -30,5 +30,11 @@ namespace JVB.WebUI.Controllers
             return Json(properties, JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult SingleProperty(int id)
+        {
+            Property property = propertyService.GetProperty(2);
+            return Json(property, JsonRequestBehavior.AllowGet);
+        }
+
     }
 }

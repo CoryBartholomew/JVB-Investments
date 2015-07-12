@@ -10,5 +10,6 @@ namespace JVB.Interface.Services
     public interface IPropertyService
     {
         IEnumerable<Property> GetProperties(int customerID);
+        Property GetProperty(int propertyID);
     }
 }

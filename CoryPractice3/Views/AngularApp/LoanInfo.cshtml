@@ -1,0 +1,17 @@
+﻿@section headSection
+{
+
+<script src="~/angular-app/House/LoanInfoController.js"></script>
+<script src="~/angular-app/Services/dataService.js"></script>
+
+<div data-ng-controller="loanInfoController">
+    <div>
+        <label>Origial Loan</label>
+        <span>{{property.PurchasedAt}}</span>
+    </div>
+@*    <div>
+        <label>Current Owed</label>
+        <span>{{property.currentOwed}}</span>
+    </div>*@
+</div>
+}

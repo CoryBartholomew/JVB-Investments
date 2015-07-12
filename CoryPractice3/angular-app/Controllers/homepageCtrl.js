@@ -8,6 +8,10 @@ angular.module('cbApp')
             }, function () {
 
             });
+        $scope.navigateToProperty = function navigateToProperty(ID) {
+                window.location.href = '/AngularApp/AppRoot/' + ID;
+
+        };
         $scope.gridOptions = {
             data: 'properties',
             columnDefs: [
